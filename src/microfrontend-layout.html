@@ -19,7 +19,12 @@
 
   <main>
     <route default>
-      <application name="@single-spa/welcome"></application>
+      <application name="@test/vue-login"></application>
+      <application name="@test/vue-landing"></application>
+    </route>
+    <route path="home">
+      <application name="@test/vue-login"></application>
+      <application name="@test/vue-landing"></application>
     </route>
   </main>
 </single-spa-router>
