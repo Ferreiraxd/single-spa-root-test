@@ -15,7 +15,13 @@ module.exports = (webpackConfigEnv, argv) => {
 
   return merge(defaultConfig, {
     // modify the webpack config however you'd like to by adding to this object
-    externals: ["vue", "vue-router", "single-spa", "@vue/devtools-api", "@vue/devtools-kit"],
+    externals: [
+      "vue",
+      "vue-router",
+      "single-spa",
+      "@vue/devtools-api",
+      "@vue/devtools-kit",
+    ],
     plugins: [
       new HtmlWebpackPlugin({
         inject: false,
