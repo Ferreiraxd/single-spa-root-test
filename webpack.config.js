@@ -21,6 +21,7 @@ module.exports = (webpackConfigEnv, argv) => {
       "single-spa",
       "@vue/devtools-api",
       "@vue/devtools-kit",
+      "@skyairline/designsystem",
     ],
     plugins: [
       new HtmlWebpackPlugin({
